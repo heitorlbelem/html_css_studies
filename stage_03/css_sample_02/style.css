@@ -16,6 +16,7 @@
 body {
   color: #A54328;
   font-size: 1.6rem;
+  background-image: url('./images/bgpaper.jpeg');
 }
 
 main {
@@ -72,3 +73,35 @@ button:hover {
 }
 
 /* media queries */
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    gap: 16rem;
+    max-width: fit-content;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  h1, h2 {
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  p, li, strong {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font: 1.4rem;
+    line-height: 2rem;
+  }
+}
